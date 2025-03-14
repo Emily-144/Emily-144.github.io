@@ -3,36 +3,55 @@
 <meta charset="UTF-8">
 <title>Experience - Emily-144</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<link rel="stylesheet" href="../style.css">
 <script src=""></script>
 	<body>
-    <nav>
-        <a href="/index.html">Home</a>
-        <a href="/hobbies/hobbies.html">Hobbies</a>
-        <div> <!-- To be styled as drop down menu with CSS -->
-            <a href="/hobbies/favorites/favorites.html">Favorites</a>
-            <a href="/hobbies/art/art.html">Art</a>
-            <a href="/hobbies/photography/photography.html">Photography</a>
-        </div>
-    </nav>
+        <nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a class="nav-link" href="experience.html">Experience</a></li>
+				<li>
+					<div class="dropdown">
+						<a href="../hobbies/hobbies.html">Hobbies</a>
+						<div class="dropdown-items">
+							<a href="../hobbies/favorites/favorites.html">Favorites</a>
+							<a href="../hobbies/art/art.html">Art</a>
+							<a href="../hobbies/photography/photography.html">Photography</a>
+						</div>
+					</div>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
 
         <h1>Experience</h1>
+
+        <video class="right-media" autoplay loop muted>
+            <source src="api diagram.mp4" type="video/mp4">
+            Video of an API diagram.
+        </video>
+        <video class="right-media" autoplay loop muted>
+            <source src="train and ox.mp4" type="video/mp4">
+            Video of a train and ox colliding.
+        </video>
+        <img class="right-media" src="sbel_banner.png" alt="3 robots surrounding the SBEL logo">
+        <img class="right-media" src="database_menu.png" alt="Database main menu">
+
         <p>
             I typically like to provide more information than I can fit on my resume, so I highlight my work experience here.
-            Feel free to reach out to me on LinkedIn if you are interested in learning more or would like a copy of my resume!
+            Feel free to reach out to me on <a href="https://www.linkedin.com/in/ecgross/">LinkedIn</a> if you are interested in learning more or would like a copy of my resume!
         </p>
 
         <h2>Northwestern Mutual</h2>
 
         <h3>Software Engineer</h3>
-        <i>Coming soon! :)</i>
+        <ul>
+            <li><i>Coming soon! :)</i></li>
+        </ul>
 
         <h3>Infrastructure & Cloud Services Intern</h3>
         <h4>Franklin, WI | May 2024 - August 2024</h4>
         <ul>
-            <!-- Add the gears gif -->
             <li>
                 Built a centralized API integrated with Apache Kafka that greatly streamlines the development process for roughly 90 applications with 800 topics,
                 enabling over 400 developers to test their application code more securely, rapidly, and easily.
@@ -43,10 +62,9 @@
             <li>
                 Presented my API at the ICS Town Hall, Intern Showcase, and to my team.
             </li>
-            <!-- Add Train and Ox gif -->
             <li>
                 Participated in the <a href="https://vote.lightthehoan.com/?_gl=1%2A9ccd5f%2A_ga%2AMTg3OTYxNTA2MC4xNzQxNjY0MjE1%2A_ga_7Z3RERET8D%2AMTc0MTY2NDIxNC4xLjEuMTc0MTY2NDIzOS4wLjAuMA..">Light the Hoan Intern Challenge</a>,
-                where I animated the iconic <i>Train and Ox</i> painting that showcases Northwestern Mutual's roots.
+                where I animated the iconic <i>Train and Ox</i> painting (by Jose Lerma) that showcases Northwestern Mutual's roots.
                 My team did not represent Northwestern Mutual at the event, but I had a blast supporting the winning team and watching the other companies' light shows!
             </li>
         </ul>
@@ -60,9 +78,8 @@
                 Improved the Simulation-Based Engineering Lab (SBEL) website by reorganizing pages, simplifying the interface,
                 and adding engaging information and aspects to enhance the user experience and improve the lab's outreach.
             </li>
-            <!-- Add image of SBEL banner -->
             <li>
-                Displayed here is the home page banner I created, showcasing the lab's talent for creating simulation models
+                Displayed here is the home page banner I edited, showcasing the lab's talent for creating simulation models
                 using their open-source physics software, <a href="https://projectchrono.org/">Chrono</a>.
             </li>
         </ul>
@@ -72,7 +89,6 @@
         <h3>AV/IT Technician</h3>
         <h4>Waukesha, WI | March 2023 - Present</h4>
         <ul>
-            <!-- Add some screenshots of the databases (with private info blurred) -->
             <li>
                 Optimized inventory model twice: First, increased Windows 11-compatible computers by 30% and decreased older ones by 19% within 4 months,
                 and second, migrated various spreadsheets to a centralized database to create a more flexible environment for the relational data.

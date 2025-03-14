@@ -3,71 +3,83 @@
 <meta charset="UTF-8">
 <title>Home - Emily-144</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<link rel="stylesheet" href="style.css">
 <script src=""></script>
 	<body>
-	<nav>
-		<a href="/experience/experience.html">Experience</a>
-		<a href="/hobbies/hobbies.html">Hobbies</a>
-		<div> <!-- To be styled as drop down menu with CSS -->
-			<a href="/hobbies/favorites/favorites.html">Favorites</a>
-			<a href="/hobbies/art/art.html">Art</a>
-			<a href="/hobbies/photography/photography.html">Photography</a>
-		</div>
-	</nav>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="nav-link" href="experience/experience.html">Experience</a></li>
+				<li>
+					<div class="dropdown">
+						<a href="hobbies/hobbies.html">Hobbies</a>
+						<div class="dropdown-items">
+							<a href="hobbies/favorites/favorites.html">Favorites</a>
+							<a href="hobbies/art/art.html">Art</a>
+							<a href="hobbies/photography/photography.html">Photography</a>
+						</div>
+					</div>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
 
-		<h1>Hello, world!</h1>
+		<section>
+			<h1>Hello, world!</h1>
+			<p>
+				My name is Emily Gross. I'm currently in my senior year of college studying computer science and mathematics.
+				I am passionate about integrating creativity and technology to enhance user experience and <i>make cool things</i>!
+			</p>
+		</section>
 
-		<p>
-			My name is Emily Gross. I'm currently in my senior year of college studying computer science and mathematics.
-			I am passionate about integrating creativity and technology to enhance user experience and <i>make cool things</i>!
-		</p>
+		<section>
+			<h2>My Programming Journey</h2>
+			<dl>
+				<dt>Swift</dt>
+				<dd>
+					Swift is the first programming language I learned. I took an App Development course in high school and fell in love with coding.
+					I actually won the <a href="https://www.unchartedlearning.org/blog/mobilemakersedu-winter-contest-2019/2020-winners-announced">MobileMakersEdu Winter Contest</a> too,
+					which helped me realize that this might be something I should pursue for a career!
+				</dd>
 
-		<h2>My Programming Journey</h2>
-		<dl>
-			<dt>Swift</dt>
-			<dd>
-				Swift is the first programming language I learned. I took an App Development course in high school and fell in love with coding.
-				I actually won the <a href="https://www.unchartedlearning.org/blog/mobilemakersedu-winter-contest-2019/2020-winners-announced">MobileMakersEdu Winter Contest</a> too,
-				which helped me realize that this might be something I should pursue for a career!
-			</dd>
+				<dt>JavaScript</dt>
+				<dd>
+					The second programming language I learned was JavaScript. I first used it in high school to add onto my HTML/CSS websites,
+					then used it in some side projects. I also primarily used JavaScript (specifically Node.js) during my internship at Northwestern Mutual to create an API.
+					I dabbled in React during a hackathon, where my group aimed to securely digitalize the voting process to make it more accessible.
+				</dd>
 
-			<dt>JavaScript</dt>
-			<dd>
-				The second programming language I learned was JavaScript. I first used it in high school to add onto my HTML/CSS websites,
-				then used it in some side projects. I also primarily used JavaScript (specifically Node.js) during my internship at Northwestern Mutual to create an API.
-				I dabbled in React during a hackathon, where my group aimed to securely digitalize the voting process to make it more accessible.
-			</dd>
+				<dt>Java</dt>
+				<dd>
+					For both of the colleges I went to, Java was used as the introductory programming language.
+					I learned object-oriented programming and the main data structures with Java.
+					I am currently using Java to write solutions for my Algorithms class and create a compiler in my Compilers class.
+				</dd>
 
-			<dt>Java</dt>
-			<dd>
-				For both of the colleges I went to, Java was used as the introductory programming language.
-				I learned object-oriented programming and the main data structures with Java.
-				I am currently using Java to write solutions for my Algorithms class and create a compiler in my Compilers class.
-			</dd>
+				<dt>C</dt>
+				<dd>
+					For both Machine Organization and Operating Systems, I used C to create numerous low-level projects,
+					such as a memory allocator, UNIX shell, and file system.
+				</dd>
 
-			<dt>C</dt>
-			<dd>
-				For both Machine Organization and Operating Systems, I used C to create numerous low-level projects,
-				such as a memory allocator, UNIX shell, and file system.
-			</dd>
+				<dt>Python</dt>
+				<dd>
+					Most of my Python experience comes from small, fun side projects, like a Discord bot or pong game.
+					I also used Flask during a hackathon with the Geolocation API.
+					For my Optimization class, I used GAMSPy and Plotly to create models, including a project where I optimized computer migration for organizations,
+					such as my workplace, UWM-Waukesha.
+				</dd>
+			</dl>
+		</section>
+			
+		<section>
+			<h2>Let's Connect</h2> <!-- Add logos as clickable images -->
+			<p><a href="https://www.linkedin.com/in/ecgross/">LinkedIn</a> <a href="https://github.com/Emily-144">GitHub</a></p>
+		</section>
 
-			<dt>Python</dt>
-			<dd>
-				Most of my Python experience comes from small, fun side projects, like a Discord bot or pong game.
-				I also used Flask during a hackathon with the Geolocation API.
-				For my Optimization class, I used GAMSPy and Plotly to create models, including a project where I optimized computer migration for organizations,
-				such as my workplace, UWM-Waukesha.
-			</dd>
-
-		</dl>
-		
-		<h2>Let's Connect</h2> <!-- Add logos as clickable images -->
-		<p><a href="https://www.linkedin.com/in/ecgross/">LinkedIn</a> <a href="https://github.com/Emily-144">GitHub</a></p>
-
-		<p><i>This website was hand-coded in HTML and CSS!</i></p>
+		<footer>
+			<p><i>This website was hand-coded in HTML and CSS!</i></p>
+		</footer>
 
 	</body>
 </html>

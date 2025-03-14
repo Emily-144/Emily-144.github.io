@@ -3,21 +3,26 @@
 <meta charset="UTF-8">
 <title>Hobbies - Emily-144</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<link rel="stylesheet" href="../style.css">
 <script src=""></script>
 	<body>
-    <nav>
-        <a href="/index.html">Home</a>
-        <a href="/experience/experience.html">Experience</a>
-        <a href="/hobbies/hobbies.html">Hobbies</a> <!-- Change so this is not clickable -->
-        <div> <!-- To be styled as drop down menu with CSS -->
-            <a href="/hobbies/favorites/favorites.html">Favorites</a>
-            <a href="/hobbies/art/art.html">Art</a>
-            <a href="/hobbies/photography/photography.html">Photography</a>
-        </div>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="../experience/experience.html">Experience</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="hobbies.html">Hobbies</a>
+                        <div class="dropdown-items">
+                            <a href="favorites/favorites.html">Favorites</a>
+                            <a href="art/art.html">Art</a>
+                            <a href="photography/photography.html">Photography</a>
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+            </ul>
+        </nav>
 
         <h1>Hobbies</h1>
         <p>
@@ -25,10 +30,11 @@
             Feel free to explore some of my major ones below!
         </p>
 
-        <!-- Add clickable images too -->
-        <a href="/hobbies/favorites/favorites.html"><h2>Favorites</h2></a>
-        <a href="/hobbies/art/art.html"><h2>Art</h2></a>
-        <a href="/hobbies/photography/photography.html"><h2>Photography</h2></a>
+        <div class = "center-media">
+            <h2><a href="favorites/favorites.html">Favorites</a></h2>
+            <h2><a href="art/art.html">Art</a></h2>
+            <h2><a href="photography/photography.html">Photography</a></h2>
+        </div>
 
 	</body>
 </html>

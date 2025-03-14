@@ -3,20 +3,26 @@
 <meta charset="UTF-8">
 <title>Art - Emily-144</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<link rel="stylesheet" href="../../style.css">
 <script src=""></script>
 	<body>
-    <nav>
-        <a href="/index.html">Home</a>
-        <a href="/experience/experience.html">Experience</a>
-        <a href="/hobbies/hobbies.html">Hobbies</a>
-        <div> <!-- To be styled as drop down menu with CSS -->
-            <a href="/hobbies/favorites/favorites.html">Favorites</a>
-            <a href="/hobbies/photography/photography.html">Photography</a>
-        </div>
-    </nav>
+        <nav>
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a class="nav-link" href="../../experience/experience.html">Experience</a></li>
+				<li>
+					<div class="dropdown">
+						<a href="../hobbies.html">Hobbies</a>
+						<div class="dropdown-items">
+							<a href="../favorites/favorites.html">Favorites</a>
+							<a href="art.html">Art</a>
+							<a href="../photography/photography.html">Photography</a>
+						</div>
+					</div>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
 
         <h1>Art</h1>
         <p>
@@ -29,6 +35,15 @@
             I've done stop motion and 2D animation, and one of my goals is to learn 3D animation.
             Animating takes quite a while, so I don't have as much time for it, but I like to revisit it once in a while!
         </p>
+
+        <div class="center-media">
+            <img src="dragon.jpg" alt="Dragon art">
+            <img src="tiger_portrait.jpg" alt="Tiger pencil drawing">
+            <video autoplay loop muted>
+                <source src="scared.mp4" type="video/mp4">
+                Video of a cat jumping away from a spider.
+            </video>
+        </div>
 
 	</body>
 </html>

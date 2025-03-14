@@ -3,20 +3,26 @@
 <meta charset="UTF-8">
 <title>Photography - Emily-144</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<link rel="stylesheet" href="../../style.css">
 <script src=""></script>
 	<body>
-    <nav>
-        <a href="/index.html">Home</a>
-        <a href="/experience/experience.html">Experience</a>
-        <a href="/hobbies/hobbies.html">Hobbies</a>
-        <div> <!-- To be styled as drop down menu with CSS -->
-            <a href="/hobbies/favorites/favorites.html">Favorites</a>
-            <a href="/hobbies/art/art.html">Art</a>
-        </div>
-    </nav>
+        <nav>
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<li><a class="nav-link" href="../../experience/experience.html">Experience</a></li>
+				<li>
+					<div class="dropdown">
+						<a href="../hobbies.html">Hobbies</a>
+						<div class="dropdown-items">
+							<a href="../favorites/favorites.html">Favorites</a>
+							<a href="../art/art.html">Art</a>
+							<a href="photography.html">Photography</a>
+						</div>
+					</div>
+				</li>
+				<li></li>
+			</ul>
+		</nav>
 
         <h1>Photography</h1>
         <p>
@@ -28,6 +34,15 @@
             My dad and I both enjoy photography, and we have taken many great photos both near home and on vacation.
             We love travelling to National Parks and going on photography hikes to capture the iconic scenery and wildlife.
         </p>
+        <p>
+            I post more of my photos here: <a href="https://www.instagram.com/through_the_emilens/">@through_the_emilens</a>
+        </p>
+
+        <div class="center-media">
+            <img src="marmot.jpg" alt="A marmot with its fur blowing in the wind">
+            <img src="landscape.jpg" alt="A Colorado landscape">
+            <img src="bird.jpg" alt="A bird swimming in a marsh">
+        </div>
 
 	</body>
 </html>
